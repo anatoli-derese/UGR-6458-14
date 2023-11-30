@@ -120,7 +120,7 @@ footer ul{
 .personal ul{
     list-style: circle;
     margin-left: 5%;
-    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-family: "Brush Script MT, Brush Script Std, cursive";
     margin-top: 0;
     padding: unset;
     font-size: 120%;
@@ -128,7 +128,7 @@ footer ul{
  h3 .first{
     margin: unset;
     margin-top: 10%;
-    align-items: left;
+    align-items: center;
     font-size: 120%;
 }
 
