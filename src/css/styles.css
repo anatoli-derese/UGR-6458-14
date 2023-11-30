@@ -8,10 +8,11 @@ body{
     color: white;
     position: relative;
 
-}beige
+}
 main{
     padding: 5%;
-    width: 130%;
+    width: 90%;
+    align-self: center;
 }
 .navbar ul{
     margin: unset;
@@ -56,8 +57,10 @@ main{
     
    
 }
+blockquote{
+    margin:0;
+}
 p{
-
     margin: 5%;
     text-align: center;
     font-size: 130%;
@@ -102,8 +105,42 @@ footer ul{
 }
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 5%;
+
+}
+.personal div{ 
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    margin-bottom: unset;
+    margin-top: unset;
+    
+}
+.personal ul{
+    list-style: circle;
+    margin-left: 5%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    margin-top: 0;
+    padding: unset;
+    font-size: 120%;
+}
+ h3 .first{
+    margin: unset;
+    margin-top: 10%;
+    align-items: left;
+    font-size: 120%;
+}
+
+
+.personal .fa-solid{
+    width:20%;
+    height: 20%;
+    color: beige;
+    margin: 3%;
+}
+.personal.school{
+    margin: unset;
 }
 
 .accomplishments {
@@ -113,8 +150,17 @@ footer ul{
     margin: 5%;
     
 }
+aside{
+    display: flex;
+    flex-direction: column;
+    margin: unset;
+
+}
 .container ul{
     list-style:circle;
+}
+.music{
+    align-self: flex-start;
 }
 table{
     border-collapse: collapse;
@@ -128,6 +174,100 @@ th,td{
     align-items: center;
     border: #4C440A 1px solid;
 }
+div .form{
+    border: #DBAF1F  dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.form >* > *{
+    
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    align-items: center;
+    justify-content: space-around;
+}
+ #message{
+    width: 65%;
+    height: 30%;
+    }
+#submit{
+    display: flex;
+    background-color: #DBAF1F;
+    margin: 5%;
+    width: 40%;
+    flex-direction: row;
+    align-self: center;
+    border-radius: 5%;
+}center
+label{
+    margin:10%;
+    border-radius: 10%;
+    width :50%;
+}
+.useful-info{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.useful-info > h3{
+    margin: unset;
+    margin-bottom: 10%;
+}
+.useful-info > ul{
+    background-color: #DBAF1F;
+    box-shadow: #4C440A 0px 0px 10px 5px;
+    border-radius: 2em;
+    width: 100%;
+    list-style: circle;
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 120%;
+}
+address{
+    background-color: #DBAF1F;
+    box-shadow: #4C440A 0px 0px 10px 5px;
+    border-radius: 2em;
+    width: 100%;
+    margin: 25%;
+}
+.certs{
+    display: flex;
+    flex-direction: column;
+}
+.certs >*{
+    display: flex;
+    flex-direction: row;
+}
+.certs > figure{
+    width: 85%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 12%;
+    border-radius: 5%;
+    box-shadow: #4C440A 0px 0px 10px 5px;
+    
+}
+.certs >figure> figcaption{
+    margin: 1%;
+    align-self: center;
+    font-size: 130%;
+}
+
+.vid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.vid > h3{
+    margin: unset;
+    margin-bottom: 1%;
+}
+
 @media  screen and (max-width: 650px) {
 
     .navbar .hamburger{
@@ -147,7 +287,5 @@ th,td{
     flex-direction: column;
     align-items: center;
 }
-
-
 
 }
