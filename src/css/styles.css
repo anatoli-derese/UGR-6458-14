@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: unset;
-    background-color: beige;
+    background-color: #abd699;
     font-family: cursive;
 
 }
@@ -28,13 +28,13 @@ main{
     cursor: pointer; 
 }
 .navbar .hamburger svg{
-    stroke: black;
+    stroke: black ;
 }
 
 .navbar > ul{
     display: none;
-    background-color: aquamarine;
-    border: aqua  2px;
+    background-color: #16123f;
+    border:#16123f 2px;
 }
 .navbar .open {
     display: grid;
@@ -47,9 +47,10 @@ main{
     margin-left: 15%;
     margin-top: 15%;
     border-radius: 5%;
-    box-shadow: #4C440A 0px 0px 10px 5px;
+    box-shadow: #16123f 0px 0px 10px 5px;
 }
 p{
+
     margin: 5%;
     text-align: center;
     font-size: 130%;
@@ -63,7 +64,7 @@ em{
 footer ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: aquamarine;
+    background-color: white;
     list-style-type: none;
     height: 3%;
     padding-left: 4px;
@@ -78,7 +79,7 @@ footer ul {
 }
 footer ul li{
     gap: 50px;  
-    background-color: aquamarine;
+    background-color:white;
     justify-content: center;
     width: fit-content;
     padding: 5px;
@@ -86,11 +87,9 @@ footer ul li{
 }
 
 .fa {
-    background-color:aquamarine;
-    color: black;
     width: 25%;
     height: 25%;
-    margin: unset;
+    margin: 2%;
     
 }
   
@@ -111,12 +110,12 @@ footer ul li{
  .nav-links a{
     text-decoration: none;
     color: black;
-    background-color: aqua;
+    background-color: #16123f;
     font-size:larger;
     gap: 50%;
  }
 .nav-links a:hover{
-    background-color: aquamarine;
+    background-color: #16123f;
 
 }
 em{
@@ -174,9 +173,9 @@ blockquote{
 audio{
     border-radius: 20px;
     margin: 10%;
-    color: aqua;
+    color: #c7ddcc;
     border-radius: 10px;
-    box-shadow: aqua 1px 1px;
+    box-shadow: #c7ddcc 1px 1px;
 }
 .useful-info{
     margin: 5%;
@@ -265,7 +264,7 @@ form > *{
 
 #submit{
     display: grid;
-    background-color: burlywood;
+    background-color: #c7ddcc;
     margin-top: 5%;
     width: 40%;
     grid-template-columns: 1fr;
@@ -292,8 +291,8 @@ label{
     text-decoration: none;
 }
 .useful-info > ul{
-    background-color: aqua;
-    box-shadow: #4C440A 0px 0px 10px 5px;
+    background-color: ;
+    box-shadow: black 0px 0px 10px 5px;
     border-radius: 2em;
     width: 60%;
     list-style: circle;
@@ -303,20 +302,20 @@ label{
     font-size: 120%;
 }.useful-info > ul > li > a{
     text-decoration: none;
-    background-color: aqua;
+    background-color: #c7ddcc;
     padding: 0;
     width: fit-content;
     color: black;
 }
 .useful-info li{
-    background-color: aqua;
+    background-color: #c7ddcc;
     border-radius: 2px;
 }
 .useful-info a{
     text-decoration: none;
 }
 .useful-info :hover{
-    background-color: aquamarine;
+    background-color: aqua;
 }
 address   a{
     text-decoration: none;
@@ -326,8 +325,8 @@ address   a{
 }
 address p {
     text-decoration: none;
-    background-color: aqua;
-    box-shadow: #4C440A 0px 0px 10px 5px;
+    background-color: #c7ddcc;
+    box-shadow: black 0px 0px 10px 5px;
     border-radius: 2em;
     width: 100%;
     margin: unset;
@@ -335,7 +334,7 @@ address p {
 }
 address p > *{
     text-decoration: none;
-    background-color: aqua;
+    background-color: #c7ddcc;
 }
 .certs{
     display: grid;
@@ -352,7 +351,7 @@ address p > *{
     border-radius: 5%;
     margin-left: 8%;
     margin-top: 12%;
-    box-shadow: aquamarine 0px 0px 10px 5px;
+    box-shadow: black 0px 0px 10px 5px;
     
 }
 .certs > figure> figcaption{
@@ -363,6 +362,7 @@ address p > *{
 
 .vid{
     display:grid;
+    box-shadow: black 0px 0px 10px 5px;
     align-items: center;
     margin: 10%;
     width: 50%;
