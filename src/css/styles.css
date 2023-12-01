@@ -1,10 +1,10 @@
 body{
     margin: unset;
     font-family: cursive;
-    background-color: #DB7D1F ;
+    background-color: #abd699 ;
 }
 .navbar{
-    background-color: #DBAF1F;
+    background-color: #16123f;
     color: white;
     position: relative;
 
@@ -69,21 +69,36 @@ em{
     font-size: 150%;
     font-weight: bold;
     font-family: cursive;
-    color: #DBAF1F;
+        
+
+}
+
+
+.nav-links ul {
+    margin-top: 20%;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
     
 
-}
-
-.thetwolinks{
-    display: flex;
-    justify-content: space-between;
-    margin: 5%;
-    margin-bottom: 10%;
-
-}
+ }
+ .nav-links li{
+    list-style: none;
+ }
+ .nav-links a{
+    text-decoration: none;
+    color: black;
+    background-color: #c7ddcc;
+    font-size:larger;
+    gap: 50%;
+ }
 footer ul{
     list-style: none;
-    background-color: #DBAF1F;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     height: 3%;
@@ -136,7 +151,7 @@ footer ul{
 .personal .fa-solid{
     width:20%;
     height: 20%;
-    color: beige;
+    color: blue;
     margin: 3%;
 }
 .personal.school{
@@ -195,7 +210,7 @@ div .form{
     }
 #submit{
     display: flex;
-    background-color: #DBAF1F;
+    background-color: #c7ddcc;;
     margin: 5%;
     width: 40%;
     flex-direction: row;
@@ -218,7 +233,7 @@ label{
     margin-bottom: 10%;
 }
 .useful-info > ul{
-    background-color: #DBAF1F;
+    background-color: #c7ddcc;;
     box-shadow: #4C440A 0px 0px 10px 5px;
     border-radius: 2em;
     width: 100%;
@@ -228,7 +243,7 @@ label{
     font-size: 120%;
 }
 address{
-    background-color: #DBAF1F;
+    background-color: #c7ddcc;;
     box-shadow: #4C440A 0px 0px 10px 5px;
     border-radius: 2em;
     width: 100%;
@@ -248,7 +263,7 @@ address{
     margin-left: 10%;
     margin-top: 12%;
     border-radius: 5%;
-    box-shadow: #4C440A 0px 0px 10px 5px;
+    box-shadow: black 0px 0px 10px 5px;
     
 }
 .certs >figure> figcaption{
