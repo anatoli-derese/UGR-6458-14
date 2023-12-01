@@ -101,7 +101,6 @@ footer ul li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-    
 
  }
  .nav-links li{
@@ -110,14 +109,11 @@ footer ul li{
  .nav-links a{
     text-decoration: none;
     color: black;
-    background-color: #16123f;
+    background-color: #c7ddcc;
     font-size:larger;
     gap: 50%;
  }
-.nav-links a:hover{
-    background-color: #16123f;
 
-}
 em{
     
     color: linear-gradient(to bottom left, #553c9a, #ee4b2b);
@@ -148,8 +144,8 @@ th,td{
     
 }
 #pdf{
-    background-color: beige;
-    color: beige;
+    background-color:blue;
+    color: blue;
 }
 .personal{
     margin: 5%;
@@ -227,7 +223,7 @@ audio{
 .personal .fa-solid{
     width:20%;
     height: 20%;
-    color: aquamarine;
+    color:blue;
     margin: 5%;
 }
 .personal.school{
@@ -315,7 +311,7 @@ label{
     text-decoration: none;
 }
 .useful-info :hover{
-    background-color: aqua;
+    background-color: #c7ddcc;
 }
 address   a{
     text-decoration: none;
