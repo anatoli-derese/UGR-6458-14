@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
+   <link rel="stylesheet" href="css/styles.css">
     <title>Accomplishments</title>
 </head>
 <body>
+    
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="professional.html">Professional</a>
-            <a href="contact.html">Talk to Me!</a>
+        <nav class="navbar switch">
+            <ul class="list" id="navbar" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="professional.html">Professional</a></li>
+                <li> <a href="contact.html">Talk to Me!</a></li>
+            </ul>
+            <button class="hamburger" id="hamburgerToggle">
+                <div class="open-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                      </svg>
+                </div> 
+           
+            </button>
         </nav>
-    </header>   
+    </header>
 
     <main>
+        <div class="certs">
         <figure>
-
             <img src="/images/cert1.png" alt="Certeficate1" >
             <figcaption>First Certeficate</figcaption>
         </figure>
@@ -29,8 +45,10 @@
             <img src="/images/cert3.png" alt="Certeficate3">
             <figcaption>Third Certeficate</figcaption>
         </figure>
-        <div>
-            <h3>Video of my project</h3>
+        </div>
+        
+        <div class="vid">
+            <h3>Video of my Project!</h3>
             <iframe 
         src="https://www.youtube.com/embed/g5aB0UIsmYc?t=45 ">
         </iframe>
@@ -39,24 +57,32 @@
     </main>
     <footer>
         <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+            <li> <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
             </li>
             <li>
                 <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-            
-
-            <li>
+            </li>                        <li>
                 <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
             </li>
             <li>
                 <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
             </li>
         </ul>
     </footer>
-    
 </body>
+<script>
+    const hamburger = document.getElementById('hamburgerToggle');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', onHamburgerClick );
+    
+     function onHamburgerClick() {
+        if (navbar.classList.contains('open')) {
+            navbar.classList.remove('open');
+            return;
+        }
+        navbar.classList.add('open');
+        
+    }  
+    
+    </script>
 </html>
