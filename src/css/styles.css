@@ -28,7 +28,7 @@ main{
     cursor: pointer; 
 }
 .navbar .hamburger svg{
-    stroke: black ;
+    stroke: #846912 ;
 }
 
 .navbar > ul{
@@ -143,10 +143,7 @@ th,td{
     margin-top: 10%;
     
 }
-#pdf{
-    background-color:blue;
-    color: blue;
-}
+
 .personal{
     margin: 5%;
     display: grid;
@@ -287,7 +284,7 @@ label{
     text-decoration: none;
 }
 .useful-info > ul{
-    background-color: ;
+    background-color:aliceblue ;
     box-shadow: black 0px 0px 10px 5px;
     border-radius: 2em;
     width: 60%;
