@@ -391,7 +391,7 @@ aside{
     display: none;
     }
     .container{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     }
     .nav-links {
