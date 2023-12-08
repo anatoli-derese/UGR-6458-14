@@ -63,6 +63,7 @@ main{
 .home-and-aside{
     display: flex;
     flex-direction: row;
+    margin: 5px;
 }
 
 
@@ -184,10 +185,14 @@ aside{
     display: flex;
     flex-direction: column;
     margin: unset;
-
 }
 .container ul{
     list-style:circle;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .music{
     align-self: flex-start;
@@ -326,7 +331,9 @@ address{
 .home-and-aside{
     display: flex;
     flex-direction: column;
+
 }
+
 
 }
 
@@ -347,8 +354,14 @@ address{
     display: none;
  }
 .container{
+    flex-direction: row;
+    align-items: center;
+}
+aside{
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
     
