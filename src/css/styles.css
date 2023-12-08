@@ -48,10 +48,12 @@ main{
     stroke: #4C440A;
 }
 #picOnHome{
-    width: 80%;
-    height: 10%;
-    margin-left: 10%;
-    margin-top: 12%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    align-self: center;
     border-radius: 5%;
     box-shadow: #4C440A 0px 0px 10px 5px;
     
@@ -75,27 +77,33 @@ em{
 
 
 .nav-links ul {
-    margin-top: 20%;
+    margin-top: auto;
     margin-left: 0;
     margin-right: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
- 
-    
-
+    width: auto;
+    background-color: #16123f;
  }
  .nav-links li{
     list-style: none;
  }
  .nav-links a{
+    margin-top: 20%;
     text-decoration: none;
-    color: black;
-    background-color: #c7ddcc;
+    color: white;
+    background-color:#16123f;
     font-size:larger;
     gap: 50%;
  }
+ .nav-links a:hover{
+    background-color: #846912;
+    color: white;
+}
+
+
 footer ul{
     list-style: none;
     background-color: white;
@@ -283,7 +291,9 @@ address{
     margin-bottom: 1%;
 }
 
-@media  screen and (max-width: 650px) {
+/* Normal phone on portrait */
+
+@media  screen and (max-width: 480px) {
 
     .navbar .hamburger{
         display: block ;
@@ -291,6 +301,10 @@ address{
     }
  .navbar .open  {
     display: block;
+ }
+ .nav-links ul {
+    margin-top: 40%;
+    margin-bottom: unset;
  }
  .navbar .open a{
     display: block;
@@ -302,5 +316,79 @@ address{
     flex-direction: column;
     align-items: center;
 }
+
+}
+
+/* Tablet */
+@media screen and (max-width :768px) and (min-width : 481px){
+    .navbar .hamburger{
+        display: block ;
+        
+    }
+ .navbar .open  {
+    display: block;
+ }
+
+ .navbar .open a{
+    display: block;
+ }
+ .navbar ul{
+    display: none;
+ }
+.container{
+    flex-direction: column;
+    align-items: center;
+}
+
+    
+}
+ 
+/* Mobile landscape */
+@media screen  and (orientation: landscape)  {
+    .main-page-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+    }
+    #picOnHome{
+        width: 50%;
+        height: 4%auto;
+    }
+    .navbar .hamburger{
+        display: block ;   
+    }
+    .navbar .open  {
+    display: block;
+    }
+    .navbar .open a{
+    display: block;
+    }
+    .navbar ul{
+    display: none;
+    }
+    .container{
+    flex-direction: column;
+    align-items: center;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row-reverse;   
+        background:none;
+    }
+    .nav-links  ul{
+        padding: unset;
+        margin: 5px;
+        
+    }
+    .nav-links li{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+        padding: 1rem;
+    }
+    .nav-links a{
+        padding: 2px;
+    }
 
 }
