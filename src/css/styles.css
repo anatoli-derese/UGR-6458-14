@@ -271,7 +271,7 @@ address{
 }
 .certs{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .certs >*{
     display: flex;
@@ -327,6 +327,10 @@ address{
 .container{
     flex-direction: column;
     align-items: center;
+}
+.certs{
+    display: flex;
+    flex-direction: column;
 }
 .home-and-aside{
     display: flex;
