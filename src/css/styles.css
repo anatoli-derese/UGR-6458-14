@@ -344,7 +344,7 @@ address{
 }
  
 /* Mobile landscape */
-@media screen  and (orientation: landscape)  {
+@media screen  and (orientation: landscape) and (max-width:1279px)   {
     .main-page-container{
         display: flex;
         flex-direction: row;
