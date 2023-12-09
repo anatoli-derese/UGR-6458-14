@@ -65,7 +65,10 @@ main{
     flex-direction: row;
     margin: 5px;
 }
-
+.container{
+    display: flex;
+    flex-direction: row;
+}
 
 blockquote{
     margin:0;
@@ -268,20 +271,23 @@ address{
 .certs >*{
     display: flex;
     flex-direction: row;
+    margin-bottom: 2px;
+    margin-left: unset;
+    padding: unset;
 }
 .certs > figure{
-    width: 85%;
-    height: 10%;
-    margin-left: 10%;
-    margin-top: 12%;
-    border-radius: 5%;
-    box-shadow: black 0px 0px 10px 5px;
     
+    border-radius: 5%;
+    box-shadow: black 0px 0px 5px 5px;
+    
+}
+.certs img {
+    width: 80%;
 }
 .certs >figure> figcaption{
     margin: 1%;
     align-self: center;
-    font-size: 130%;
+    font-size: 1vw;
 }
 
 .vid{
@@ -293,6 +299,10 @@ address{
 .vid > h3{
     margin: unset;
     margin-bottom: 1%;
+}
+.vid iframe{
+    width: 100%;
+    height: 25em;
 }
 
 /* Normal phone on portrait */
@@ -316,7 +326,7 @@ address{
  .navbar ul{
     display: none;
  }
-.container{
+.aside{
     flex-direction: column;
     align-items: center;
 }
@@ -329,7 +339,15 @@ address{
     flex-direction: column;
 
 }
-
+.container{
+    flex-direction: column;
+}
+aside{
+    flex-direction: row;
+}
+.certs >figure> figcaption{
+    font-size: 3vw;
+}
 
 }
 
@@ -350,7 +368,7 @@ address{
     display: none;
  }
 .container{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 aside{
@@ -359,8 +377,19 @@ aside{
     align-items: center;
     justify-content: center;
 }
-
+aside{
+    flex-direction: row;
+}
     
+.certs figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.vid iframe{
+    width: 100%;
+    height: 20em;
+}
 }
  
 /* Mobile landscape */
@@ -386,8 +415,11 @@ aside{
     .navbar ul{
     display: none;
     }
+    aside{
+        flex-direction: row;
+    }
     .container{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     }
@@ -410,6 +442,14 @@ aside{
     }
     .nav-links a{
         padding: 2px;
+    }
+    .certs figure {
+        display: flex;
+        flex-direction: column;
+    }
+    .vid iframe{
+        width: 100%;
+        height: 20em;
     }
 
 }
