@@ -223,22 +223,34 @@ div .form{
     width: 65%;
     height: 30%;
     }
-#submit{
+#cont{
     display: flex;
-    background-color: #c7ddcc;;
-    margin: 5%;
-    width: 40%;
-    flex-direction: row;
-    align-self: center;
-    border-radius: 5%;
+    justify-content: center;
+}
+#submit{
+    
+    color: #14396A !important;
+    font-size: 14px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 1px #BEE2F9;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 2px solid #ABD699;
+    background: #A9EEE5;
+    background: linear-gradient(to top, #A9EEE5, #CFCFCF);
 }center
 label{
     margin:10%;
     border-radius: 10%;
     width :50%;
 }
-.useful-info{
-    margin: 5%;
+#submit:hover{
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}
+.useful-info section{
+    margin: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +265,7 @@ label{
     border-radius: 2em;
     width: 100%;
     list-style: circle;
-    margin: 0;
+    margin: unset;
     margin-bottom: 5%;
     font-size: 120%;
 }
