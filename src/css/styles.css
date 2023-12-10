@@ -388,7 +388,9 @@ address{
  .navbar .open  {
     display: block;
  }
-
+.home-and-aside{
+    margin: 5%;
+}
  .navbar .open a{
     display: block;
  }
