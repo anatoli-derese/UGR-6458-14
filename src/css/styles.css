@@ -249,7 +249,7 @@ label{
     background: #468CCF;
     background: linear-gradient(to top, #468CCF, #63B8EE);
 }
-.useful-info section{
+.useful-info {
     margin: unset;
     display: flex;
     flex-direction: column;
@@ -257,24 +257,34 @@ label{
 }
 .useful-info > h3{
     margin: unset;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 .useful-info > ul{
-    background-color: #c7ddcc;;
+    background-color: #c7ddcc;
+    
     box-shadow: #4C440A 0px 0px 10px 5px;
     border-radius: 2em;
-    width: 100%;
+    width: 80%;
     list-style: circle;
     margin: unset;
     margin-bottom: 5%;
     font-size: 120%;
 }
+.useful-info a {
+    text-decoration: unset;
+}
+.useful-info ul:hover{
+    color: #14396A !important;
+    background: #468CCF;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+
+}
 address{
     background-color: #c7ddcc;;
     box-shadow: #4C440A 0px 0px 10px 5px;
     border-radius: 2em;
-    width: 100%;
-    margin: 25%;
+    width: 80%;
+    margin: 5%;
 }
 .certs{
     display: flex;
@@ -359,6 +369,12 @@ aside{
 }
 .certs >figure> figcaption{
     font-size: 3vw;
+}
+.useful-info h3{
+    margin-bottom: 10%;    
+}
+address{
+    margin: 5%;
 }
 
 }
