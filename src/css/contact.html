@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar switch">
-            <ul class="list" id="navbar" >
+            <ul class="list navbar__options" id="navbar" >
                 <li><a href="index.html">Home</a></li>
                 <li><a href="personal.html">Personal</a></li>
                 <li><a href="professional.html">Professional</a></li>
@@ -25,14 +25,12 @@
                         <path d="M4 18l16 0" />
                       </svg>
                 </div> 
-           
             </button>
         </nav>
     </header>
     <main>
         <div class="form">
-            <h2>Leave a Comment</h2>
-    
+            <h2>Leave a Comment</h2>    
             <form action="#" method="post" id="commentForm">
             <div>
                 <label for="name">Name:   </label>
@@ -49,66 +47,47 @@
             <div>        
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-               
+            </div>               
             </form>
             <div id="cont">
                 <button id="submit" class="submit">Send Message</button>
             </div> 
-
-
-
         </div>
     </main>
     <section class="useful-info">
-        <h3>Useful Info.</h3>
-        <ul>
-            <li><a href="accomplishments.html">Accomplishments</a></li>
-      
+        <h3 class="useful-info__header">Useful Info.</h3>
+        <ul class="useful-info__list">
+            <li><a href="accomplishments.html">Accomplishments</a></li>      
         </ul>
-
             <address>
-                <p>Addis Ababa<br> Ethiopia <br> <a href="tel:+251962181868">+251962181868</a> <br><a href="mailto:derese.anatoli@gmail.com">derese.anatoli@gmail.com</a></p> 
-
-                
+                <p>Addis Ababa<br> Ethiopia <br> <a href="tel:+251962181868">+251962181868</a> <br><a href="mailto:derese.anatoli@gmail.com">derese.anatoli@gmail.com</a></p>                 
             </address>
-
     </section>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="footer">
+        <ul class="footer__social_links">
+            <li><a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+            </li>
+            <li><a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-            
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+            <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
             </li>
             <li>
                 <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
             </li>
         </ul>
     </footer>
-
 </body>
 <script>
     const hamburger = document.getElementById('hamburgerToggle');
     const navbar = document.getElementById('navbar');
-    hamburger.addEventListener('click', onHamburgerClick );
-    
+    hamburger.addEventListener('click', onHamburgerClick );    
      function onHamburgerClick() {
         if (navbar.classList.contains('open')) {
             navbar.classList.remove('open');
             return;
         }
-        navbar.classList.add('open');
-        
-    }  
-    
+        navbar.classList.add('open');        
+    }      
     </script>
 </html>
