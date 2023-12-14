@@ -1,24 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en has-background-success">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
     <title>Professional</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="personal.html">Personal</a>
-            <a href="contact.html">Talk to Me!</a>
+        <nav class="navbar has-navbar-fixed-top  is-info is-variable is-centered">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="box-shadow: 2px rosybrown; width:70%"true"></span>
+        </a>
+        <div class="navbar-menu is-8  is-variable is-centered" id="nav-links">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item  mx-4">Home</a>
+                <a href="personal.html" class="navbar-item mx-4"add>Personal</a>
+                <a href="contact.html" class="navbar-item  mx-4">Talk to Me!</a>
+            </div>
+                
+        </div>            
         </nav>
     </header>
 
     <main>
-
-        <a href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf"></i></a>
-        
+        <a class="mx-6 my-6 " href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank"><span class="icon is-large"> <i class="fa fa-file-pdf mx-5 my-5 ">Resume</i></span></a>
+       
         <div><h3>Projects</h3>
         <ul>
             
@@ -100,25 +111,32 @@
         
 
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+
+    <footer class="footer is-size-4 px-0 py-0 mt-1  is-fixed-bottom" style="position: fixed;  bottom: 0; left: 0; right: 0;">
+        <ul class="columns is-mobile is-centered is-variable ">
+            <li> <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-           
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin column is-8 "></i>  </a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><i class="fa fa-github column is-8"></i>  </a>    
             </li>
         </ul>
     </footer>
+    
+    
 </body>
+<script>
+    const burgerIcon = document.querySelector('#burger')
+    const navBarMenu = document.querySelector("#nav-links")
+
+    burgerIcon.addEventListener('click',() =>{
+        navBarMenu.classList.toggle("is-active")
+        burgerIcon.classList.toggle("is-active")
+    })
+</script>
 </html>
