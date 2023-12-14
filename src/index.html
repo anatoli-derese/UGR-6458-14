@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>    <title>Home</title>
 </head>
-<body>
+<body class="is-success">
     <header>
-        <nav>
-            <a href="personal.html">Personal</a>
-            <a href="professional.html">Professional</a>
-            <a href="contact.html">Talk to Me!</a>
+        
+        <nav class="navbar has-navbar-fixed-top  is-info is-variable">
+            
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu is-8  is-variable" id="nav-links">
+            <div class="navbar-start">
+                <a href="personal.html" class="navbar-item  mx-4">Personal</a>
+                <a href="professional.html" class="navbar-item mx-4"add>Professional</a>
+                <a href="contact.html" class="navbar-item  mx-4">Talk to Me!</a>
+            </div>
+                
+        </div>            
         </nav>
     </header>
-    <main>  
-        <img  src="images/anatoli.jpg" alt="my photo" >
-        <div>
-        <p>
-            Embark on a captivating exploration through the multifaceted tapestry of my creative odyssey. As a seasoned Software Engineer, I invite you to delve into the heart of innovation, where every project serves as a testament to my unwavering commitment to pushing artistic boundaries. This portfolio encapsulates not merely a catalogue of skills but a narrative woven with threads of passion, precision, and a relentless pursuit of excellence. From the inception of imaginative concepts to the meticulous execution of intricate details, each endeavor is a chapter in the story of my artistic evolution. Here, you'll find a fusion of technical prowess, design ingenuity, and a profound dedication to storytelling. Join me on this visual journey, where ideas spring to life, and creativity intertwines seamlessly with functionality. 
-            Your presence is a welcomed addition to this immersive experience—a celebration of the extraordinary in a world where artistic expression knows no bounds. 
-            Welcome to a sanctuary of creativity, where dreams manifest into tangible realities.
-        </p>
-    </div>
-   
-        
-        
+    <main >  
+        <div class="has-background-success">
+            <img  src="images/anatoli.jpg" alt="my photo" class="image is-2by2 box ">
+            <p >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Lorem accusamus corrupti laboriosam ea sequi quas consequuntur aperiam optio magni!
+            </p>
+        </div>        
             <div>
-                <a href="personal.html">Go To Personal Page</a>
+                <a href="personal.html" class="my-8">Go To Personal Page</a>
                 <a href="professional.html">Go To Professional Page</a>
             </div>
-        
-
     </main>
     <footer>
         <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+            <li> <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
             </li>
             <li>
                 <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
             </li>
-
-
             <li>
                 <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
             </li>
             <li>
                 <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
             </li>
         </ul>
     </footer>
 </body>
+
+<script>
+    const burgerIcon = document.querySelector('#burger')
+    const navBarMenu = document.querySelector("#nav-links")
+
+    burgerIcon.addEventListener('click',() =>{
+        navBarMenu.classList.toggle("is-active")
+        burgerIcon.classList.toggle("is-active")
+    })
+
+</script>
+
+
 </html>
+
+
