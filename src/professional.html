@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
     <title>Professional</title>
 </head>
-<body>
+<body class="has-background-success">
     <header>
         <nav class="navbar has-navbar-fixed-top  is-info is-variable is-centered">
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
@@ -27,10 +26,12 @@
         </nav>
     </header>
 
-    <main>
+    <main class="has-background-success">
         <a class="mx-6 my-6 " href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank"><span class="icon is-large"> <i class="fa fa-file-pdf mx-5 my-5 ">Resume</i></span></a>
-       
-        <div><h3>Projects</h3>
+        <div class="columns is-tablet">
+
+        
+        <div class="column"><h3>Projects</h3>
         <ul>
             
             <li>
@@ -47,8 +48,7 @@
             </li>
         </ul>
     </div>
-       
-    <div>
+    <div class="column">
     <h3>Skills</h3>
         <ul>
             
@@ -63,9 +63,10 @@
            </li>
         </ul>
     </div>
+</div>
 
         <h2>Accomplishments</h2>
-        <table>
+        <table class="table is-primary">
             <tr>
                 <th>ID</th>
                 <th>Level</th>
@@ -139,4 +140,6 @@
         burgerIcon.classList.toggle("is-active")
     })
 </script>
+
+
 </html>
