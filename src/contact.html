@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Contact Me!</title>
 </head>
 <body>
     <header>
         <nav class="navbar switch">
-            <ul class="list navbar__options" id="navbar" >
+               <ul class="list navbar__options" id="navbar" >
                 <li><a href="index.html">Home</a></li>
                 <li><a href="personal.html">Personal</a></li>
                 <li><a href="professional.html">Professional</a></li>
@@ -31,26 +30,29 @@
     <main>
         <div class="form">
             <h2>Leave a Comment</h2>    
-            <form action="#" method="post" id="commentForm">
+            <form action="https://formsubmit.co/derese.anatoli@gmail.com" method="POST"  id="commentForm">
             <div>
-                <label for="name">Name:   </label>
+                <label name="name">Name:   </label>
                 <input type="text" id="name" name="name" required>
             </div>
             <div>
-                <label for="email">Email:   </label>
+                <label name="email">Email:   </label>
                 <input type="email" id="email" name="email" required>
             </div>
             <div>       
-                <label for="phone">Phone:   </label>
+                <label name="phone">Phone:   </label>
                 <input type="tel" id="phone" name="phone" required>
             </div>
             <div>        
-                <label for="message">Message</label>
+                <label name="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
             </div>               
             </form>
+          
+          
+          
             <div id="cont">
-                <button id="submit" class="submit">Send Message</button>
+                <button id="submit" class="submit" name="submit" onclick="sendMail()">Send Message</button>
             </div> 
         </div>
     </main>
@@ -77,17 +79,15 @@
             </li>
         </ul>
     </footer>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="js/contact.js"></script>
+<script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
+
 </body>
-<script>
-    const hamburger = document.getElementById('hamburgerToggle');
-    const navbar = document.getElementById('navbar');
-    hamburger.addEventListener('click', onHamburgerClick );    
-     function onHamburgerClick() {
-        if (navbar.classList.contains('open')) {
-            navbar.classList.remove('open');
-            return;
-        }
-        navbar.classList.add('open');        
-    }      
-    </script>
+
+    
+
+
 </html>
