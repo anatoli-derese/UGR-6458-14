@@ -1,78 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en " class="has-background-success">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
-
     <title>Contact Me!</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="personal.html">Personal</a>
-            <a href="contact.html">Talk to Me!</a>
+<body >
+    <header>    
+        <nav class="navbar has-navbar-fixed-top  is-info is-variable is-centered">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu is-8  is-variable is-centered" id="nav-links">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item  mx-4">Home</a>
+                <a href="personal.html" class="navbar-item  mx-4">Personal</a>
+                <a href="professional.html" class="navbar-item mx-4"add>Professional</a>
+                <a href="accomplishments.html" class="navbar-item  mx-4">Accomplishments</a>
+            </div>        
+        </div>            
         </nav>
     </header>
     <main>
-        <div>
-            <h2>Leave a Comment</h2>
-    
-            <form action="#" method="post" id="commentForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-        
-                <button type="submit">Submit Comment</button>
-            </form>
-
-
-
-        </div>
-    </main>
-    <section>
-        <h3>Useful Info.</h3>
-        <ul>
-            <li><a href="accomplishments.html">Accomplishments</a></li>
-      
-        </ul>
-
-            <address>
-                <p>Addis Ababa<br> Ethiopia <br> <a href="tel:+251962181868">+251962181868</a> <br><a href="mailto:derese.anatoli@gmail.com">derese.anatoli@gmail.com</a></p> 
+        <div class="is-centered " >
+            <h2 class="title is-centered">Leave a Comment</h2>
+            
+            <form action="#" method="post" id="commentForm" class="form mx-4">
+                <div class="field mx-3 my-4"> 
+                    <label for="name" class="label">Name:</label>
+                <div class="control columns is-mobile">
+                    <input type="text" id="name" name="name"class="input  column is-half is-centered" placeholder="Your Full Name" required>
+                </div>
+                </div> 
+                <div class="field mx-3 my-4">
+                    <label for="email" class="label">Email:</label>
+                    <div class="control columns is-mobile">
+                        <input type="email" id="email" name="email"class="input column is-half is-centered" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="field mx-3 my-4">
+                 <label for="phone" class="label">Phone Number:</label>
+                 <div class="control columns is-mobile">
+                    <input type="tel" id="phone" name="phone" class="input is-centered column is-half is-mobile" placeholder="Phone number" required>
+                 </div>
+                </div>
 
                 
+                <!-- <div class="field mx-3 my-4"> 
+                <label for="Message">Message:</label>
+                    <div class="control columns">
+                        <input id="message" name="message" rows="4" class=" input column is-one-third is-centered" placeholder="Message" required></textarea>
+                    </div>
+                </div>   -->
+                <div class="field mx-3 my-4">
+                    <label class="label">Message</label>
+                    <div class="control  columns is-mobile">
+                        <input id="message" name="message" rows="4" class=" input column is-half is-centered" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+                <button type="submit" class="button is-danger my-5">Submit Comment</button>
+            </form>
+        </div>
+    </main>
+    <section class="section  my-5">
+        <h3 class="title is-centered is-size-2">Useful Info.</h3>
+            <a href="accomplishments.html" class="mx-6 button is-info">Accomplishments</a>     
+        
+            <address class="container box my-4 has-background-success">
+                <p>Addis Ababa<br> Ethiopia <br> <a href="tel:+251962181868">+251962181868</a> <br><a href="mailto:derese.anatoli@gmail.com">derese.anatoli@gmail.com</a></p> 
             </address>
-
     </section>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="footer is-size-4-is-tablet is-size-5 px-0 py-0 my-1  navbar is-fixed-bottom">
+        <ul class="columns is-mobile is-centered is-variable navbar is-fixed-bottom ">
+            <li> <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-            
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin column is-8 "></i>  </a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><i class="fa fa-github column is-8"></i>  </a>    
             </li>
         </ul>
     </footer>
+    <script>
+        const burgerIcon = document.querySelector('#burger')
+        const navBarMenu = document.querySelector("#nav-links")
+        burgerIcon.addEventListener('click',() =>{
+            navBarMenu.classList.toggle("is-active")
+            burgerIcon.classList.toggle("is-active")
+        })
+    </script>
+
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en has-background-info" >
+<html lang="en has-background-success" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,17 +62,18 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        const burgerIcon = document.querySelector('#burger')
+        const navBarMenu = document.querySelector("#nav-links")
+        burgerIcon.addEventListener('click',() =>{
+            navBarMenu.classList.toggle("is-active")
+            burgerIcon.classList.toggle("is-active")
+        })
+    </script>
 </body>
 
-<script>
-    const burgerIcon = document.querySelector('#burger')
-    const navBarMenu = document.querySelector("#nav-links")
 
-    burgerIcon.addEventListener('click',() =>{
-        navBarMenu.classList.toggle("is-active")
-        burgerIcon.classList.toggle("is-active")
-    })
-</script>
 
 </html>
 
