@@ -29,7 +29,7 @@
         <div class="is-centered " >
             <h2 class="title is-centered">Leave a Comment</h2>
             
-            <form action="#" method="post" id="commentForm" class="form mx-4">
+            <form action="" method="POST" id="commentForm" class="form mx-4">
                 <div class="field mx-3 my-4"> 
                     <label for="name" class="label">Name:</label>
                 <div class="control columns is-mobile">
@@ -48,21 +48,13 @@
                     <input type="tel" id="phone" name="phone" class="input is-centered column is-half is-mobile" placeholder="Phone number" required>
                  </div>
                 </div>
-
-                
-                <!-- <div class="field mx-3 my-4"> 
-                <label for="Message">Message:</label>
-                    <div class="control columns">
-                        <input id="message" name="message" rows="4" class=" input column is-one-third is-centered" placeholder="Message" required></textarea>
-                    </div>
-                </div>   -->
                 <div class="field mx-3 my-4">
                     <label class="label">Message</label>
                     <div class="control  columns is-mobile">
                         <input id="message" name="message" rows="4" class=" input column is-half is-centered" placeholder="Message" required></textarea>
                     </div>
                   </div>
-                <button type="submit" class="button is-danger my-5">Submit Comment</button>
+                <button type="submit" class="button is-danger my-5" onclick= "sendMail()" >Submit Comment</button>
             </form>
         </div>
     </main>
@@ -89,14 +81,20 @@
             </li>
         </ul>
     </footer>
-    <script>
-        const burgerIcon = document.querySelector('#burger')
-        const navBarMenu = document.querySelector("#nav-links")
-        burgerIcon.addEventListener('click',() =>{
-            navBarMenu.classList.toggle("is-active")
-            burgerIcon.classList.toggle("is-active")
-        })
+    <script >
+
+const hamburger = document.getElementById('hamburgerToggle');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', onHamburgerClick );    
+     function onHamburgerClick() {
+        if (navbar.classList.contains('open')) {
+            navbar.classList.remove('open');
+            return;
+        }
+        navbar.classList.add('open');        
+    } 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </body>
