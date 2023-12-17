@@ -1,62 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-success">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
     <title>Accomplishments</title>
 </head>
-<body>
+<body  class="has-background-success">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="professional.html">Professional</a>
-            <a href="contact.html">Talk to Me!</a>
+        <nav class="navbar has-navbar-fixed-top  is-info is-variable is-centered">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu is-8  is-variable is-centered" id="nav-links">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item  mx-4">Home</a>
+                <a href="personal.html" class="navbar-item mx-4"add>Personal</a>
+                <a href="professional.html" class="navbar-item  mx-4">Professional</a>
+                <a href="contact.html" class="navbar-item mx-4">Talk to Me!</a>
+            </div>
+        </div>            
         </nav>
-    </header>   
+    </header>
 
     <main>
-        <figure>
+        <div class="columns is-centered is-tablet mx-4 my-4">
 
-            <img src="/images/cert1.png" alt="Certeficate1" >
-            <figcaption>First Certeficate</figcaption>
-        </figure>
-        <figure>
-            <img src="/images/cert2.jpeg" alt="Certeficate2" >
-            <figcaption>Second Certeficate</figcaption>
-        </figure>
-        <figure>
-            <img src="/images/cert3.png" alt="Certeficate3">
-            <figcaption>Third Certeficate</figcaption>
-        </figure>
-        <div>
-            <h3>Video of my project</h3>
-            <iframe 
+            <figure class="column is-tablet">
+                <img src="/images/cert1.png" alt="Certeficate1" >
+                <figcaption>First Certeficate</figcaption>
+            </figure>
+            <figure class="column is-tablet">
+                <img src="/images/cert2.jpeg" alt="Certeficate2" >
+                <figcaption>Second Certeficate</figcaption>
+            </figure >
+            <figure class="column is-tablet ">
+                <img src="/images/cert3.png" alt="Certeficate3">
+                <figcaption>Third Certeficate</figcaption>
+            </figure>
+
+        </div>
+        
+
+        <div class>
+            <h3 class="title is-size-2 mx-4 column">Video of my project</h3>
+            <figure class="has-ratio columns is-centered">
+                <iframe class="mx-4 mb-6 pb-6 is-centered column is-half " 
         src="https://www.youtube.com/embed/g5aB0UIsmYc?t=45 ">
         </iframe>
+            </figure>
+            
         </div>
         
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="footer is-size-4-is-tablet is-size-5 px-0 py-0 my-1  navbar is-fixed-bottom">
+        <ul class="columns is-mobile is-centered is-variable navbar is-fixed-bottom ">
+            <li> <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-            
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram column is-8"></i>  </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin column is-8 "></i>  </a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><i class="fa fa-github column is-8"></i>  </a>    
             </li>
         </ul>
     </footer>
+    <script>
+        const burgerIcon = document.querySelector('#burger')
+        const navBarMenu = document.querySelector("#nav-links")
     
+        burgerIcon.addEventListener('click',() =>{
+            navBarMenu.classList.toggle("is-active")
+            burgerIcon.classList.toggle("is-active")
+        })
+    </script>
 </body>
 </html>
