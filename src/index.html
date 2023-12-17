@@ -61,8 +61,23 @@
             </li>
         </ul>
     </footer>
+    <script>
+    const hamburger = document.getElementById('hamburgerToggle');
+    const navbar = document.getElementById('navbar');
+    hamburger.addEventListener('click', onHamburgerClick );
 
-    <script src="app.js"></script>
+    function onHamburgerClick() {
+    if (navbar.classList.contains('open')) {
+        navbar.classList.remove('open');
+        return;
+    }
+    navbar.classList.add('open');
+    
+}  
+
+    </script>
+
+    <!-- <script src="app.js"></script> -->
 </body>
 
 
