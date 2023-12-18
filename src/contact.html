@@ -28,8 +28,7 @@
     <main>
         <div class="is-centered " >
             <h2 class="title is-centered">Leave a Comment</h2>
-            
-            <form action="" method="POST" id="commentForm" class="form mx-4">
+            <form action="https://formsubmit.co/derese.anatoli@gmail.com" method="POST" id="commentForm" class="form mx-4">
                 <div class="field mx-3 my-4"> 
                     <label for="name" class="label">Name:</label>
                 <div class="control columns is-mobile">
@@ -81,20 +80,8 @@
             </li>
         </ul>
     </footer>
-    <script >
-
-const hamburger = document.getElementById('hamburgerToggle');
-    const navbar = document.getElementById('navbar');
-    hamburger.addEventListener('click', onHamburgerClick );    
-     function onHamburgerClick() {
-        if (navbar.classList.contains('open')) {
-            navbar.classList.remove('open');
-            return;
-        }
-        navbar.classList.add('open');        
-    } 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="app.js"></script>
+    
 
 
 </body>
