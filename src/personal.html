@@ -1,101 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="tailwind.css" rel="stylesheet">
+          <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
 
-    <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
+          <title>Personal</title>
+      </head>
+      <body class="bg-gray-600 text-white">
+          <header>
+              
+              <nav class="p-5 bg-gray-400 shadow md:flex md:items-center md:justify-between">
+                  <div class="flex justify-between items-center ">
+                    <span class="text-2xl font-[Poppins] cursor-pointer">
+                      <a href="index.html"> 
+                          <i class=" fa-solid fa-house"></i>
+                      </a>
+                    </span>
+              
+                    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                      <ion-icon name="menu" onclick="Menu(this)"><i class="fa-solid fa-bars"></i></ion-icon>
+                    </span>
+                  </div>
+              
+                  <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-500 md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">              
+                    <li class="mx-4 my-6 md:my-0">
+                      <a href="index.html" class="text-xl hover:text-cyan-500 ">Home</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                      <a href="professional.html" class="text-xl hover:text-cyan-500 ">Professional</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                      <a href="contact.html" class="text-xl hover:text-cyan-500 ">Talk to me</a>
+                    </li>              
+                  </ul>
+                </nav>
+          </header>   
+        <div class=" md:flex">
+          <main class="container mx-auto my-8 text-xl">
+              <div class="mx-3">
+                  <h3 class="text-3xl mx-3">Education</h3>
+                      <ul class="mx-6">            
+                          <li>College: 2020-2026, Addis Ababa University<a href=" http://www.aau.edu.et/" class="mx-3 "><i class="fa-solid  fa-globe"></i></a></li>
+                          <li>High School: 2017-2020 , Ebenezer School <a href="https://www.abenezerschool.com/"><i class="fa-solid  fa-globe"></i></a></li>
+                          <li>Elementary: 2008-2019, Guardians Angel's Catholic School</li>
+                      </ul>
+              </div>
+              <div class="my-3">
+                  <h3 class=" mx-3 text-3xl my-3">Hobbies</h3>
+                  <ul class="mx-6">
+                      <li>Reading</li>
+                      <li>Playing Video Games</li>
+                      <li>Watching Movies</li>
+                      <li>Listening to Music</li>
+                      <li>Norse and Greek Mythologies</li>
+                  </ul>
+              </div>
+          </main>
+          
+          <aside class="container mx-auto my-8 text-xl">
+              <blockquote>
+                  <h2  class=" mx-3 text-3xl ">Favorite Quote</h2>
+                  <p class="mx-5 text-xl italic">
+                      "My mother Thetis tells me
+                      that there are two ways in which I may meet my end.
+                      If I stay here and fight, I will not return alive
+                      but my name will live forever:
+                      whereas if I go home my name will die
+                      but it will be long ere death shall take me."
+                      <br>
+                      -Achilles
+                  </p>
+              </blockquote>
+              <div class="my-3">
+                  <h2 class=" mx-3 text-3xl my-3">Favorite Music</h2>
+                  <audio controls class="mb-8 pb-3">
+                      <source src="/images/fav-music.ogg" type="audio/ogg">
+                      Your browser does not support the audio element.
+                    </audio>
+              </div>
+          </aside>
+          </div>
 
-    <title>Personal</title>
-</head>
-<body class="bg-gray-600 text-white">
-    <header>
-        
-        <nav class="p-5 bg-gray-400 shadow md:flex md:items-center md:justify-between">
-            <div class="flex justify-between items-center ">
-              <span class="text-2xl font-[Poppins] cursor-pointer">
-                <a href="index.html"> 
-                    <i class=" fa-solid fa-house"></i>
-                </a>
-              </span>
-        
-              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"><i class="fa-solid fa-bars"></i></ion-icon>
-              </span>
-            </div>
-        
-            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-500 md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">              
-              <li class="mx-4 my-6 md:my-0">
-                <a href="index.html" class="text-xl hover:text-cyan-500 ">Home</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="professional.html" class="text-xl hover:text-cyan-500 ">Professional</a>
-              </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="contact.html" class="text-xl hover:text-cyan-500 ">Talk to me</a>
-              </li>              
-            </ul>
-          </nav>
-    </header>   
-   <div class=" md:flex">
-    <main class="container mx-auto my-8 text-xl">
-        <div class="mx-3">
-            <h3 class="text-3xl mx-3">Education</h3>
-                <ul class="mx-6">            
-                    <li>College: 2020-2026, Addis Ababa University<a href=" http://www.aau.edu.et/" class="mx-3 "><i class="fa-solid  fa-globe"></i></a></li>
-                    <li>High School: 2017-2020 , Ebenezer School <a href="https://www.abenezerschool.com/"><i class="fa-solid  fa-globe"></i></a></li>
-                    <li>Elementary: 2008-2019, Guardians Angel's Catholic School</li>
-                </ul>
-        </div>
-        <div class="my-3">
-            <h3 class=" mx-3 text-3xl my-3">Hobbies</h3>
-            <ul class="mx-6">
-                <li>Reading</li>
-                <li>Playing Video Games</li>
-                <li>Watching Movies</li>
-                <li>Listening to Music</li>
-                <li>Norse and Greek Mythologies</li>
-            </ul>
-        </div>
-    </main>
-    
-    <aside class="container mx-auto my-8 text-xl">
-        <blockquote>
-            <h2  class=" mx-3 text-3xl ">Favorite Quote</h2>
-            <p class="mx-5 text-xl italic">
-                "My mother Thetis tells me
-                that there are two ways in which I may meet my end.
-                If I stay here and fight, I will not return alive
-                but my name will live forever:
-                whereas if I go home my name will die
-                but it will be long ere death shall take me."
-                <br>
-                -Achilles
-            </p>
-        </blockquote>
-        <div class="my-3">
-            <h2 class=" mx-3 text-3xl my-3">Favorite Music</h2>
-            <audio controls class="mb-8 pb-3">
-                <source src="/images/fav-music.ogg" type="audio/ogg">
-                Your browser does not support the audio element.
-              </audio>
-        </div>
-    </aside>
-    </div>
-
-    <footer class="bg-gray-500 text-white text-2xl px-0 py-1 mt-8 fixed bottom-0 w-full">
-        <div class="container mx-auto flex justify-center items-center space-x-4">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </footer>
-    <script src="app.js"></script>
-
+          <footer class="bg-gray-500 text-white text-2xl px-0 py-1 mt-8 fixed bottom-0 w-full">
+              <div class="container mx-auto flex justify-center items-center space-x-4">
+                  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+          </footer>
+          <script src="app.js"></script>
 
 
-    
-</body>
-</html>
+
+          
+      </body>
+      </html>
