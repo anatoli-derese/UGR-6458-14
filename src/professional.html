@@ -3,122 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
     <title>Professional</title>
 </head>
-<body>
+<body class="bg-gray-600 text-white font-mono text-xl">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="personal.html">Personal</a>
-            <a href="contact.html">Talk to Me!</a>
-        </nav>
+        <nav class="p-5 bg-gray-400 shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center ">
+              <span class="text-2xl font-[Poppins] cursor-pointer">
+                <a href="index.html" > 
+                    <i class=" fa-solid fa-house"></i>
+                </a>
+              </span>
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"><i class="fa-solid fa-bars"></i></ion-icon>
+              </span>
+            </div>
+        
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-500 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]">
+              
+              <li class="mx-4 my-6 md:my-0">
+                <a href="index.html" class="text-xl hover:text-cyan-500 ">Home</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="professional.html" class="text-xl hover:text-cyan-500 ">Professional</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                <a href="contact.html" class="text-xl hover:text-cyan-500 ">Talk to me</a>
+              </li>              
+            </ul>
+          </nav>
     </header>
 
     <main>
 
-        <a href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf"></i></a>
+        <a href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank" class="text-blue-400 text-4xl mx-5 my-7 py-7"><i class="fa fa-file-pdf my-5">Resume</i></a>
         
-        <div><h3>Projects</h3>
-        <ul>
-            
-            <li>
-                Health care Automation System | 2020 | Foka Stem Center
-            </li>
-            <li>
-                Smart Digital E- metter | 2019| Foka Stem Center
-            </li>
-            <li>
-                Math Quiz Game Player | 2021 | AAiT
-            </li>
-            <li>
-                Create 2048 Game | 2021 | Pet Project
-            </li>
-        </ul>
-    </div>
+        <div class="md:flex">
+
+        
+        <div>
+            <h3 class="text-3xl mx-2 my-3">Projects</h3>
+            <ul class="text-lg mx-6"> 
+                <li>
+                    Health care Automation System | 2020 | Foka Stem Center
+                </li>
+                <li>
+                    Smart Digital E- metter | 2019| Foka Stem Center
+                </li>
+                <li>
+                    Math Quiz Game Player | 2021 | AAiT
+                </li>
+                <li>
+                    Create 2048 Game | 2021 | Pet Project
+                </li>
+            </ul>
+        </div>
        
-    <div>
-    <h3>Skills</h3>
-        <ul>
-            
-           <li>
-            JavaScript, Python, Java, C++, SQL, HTML, CSS, and more.
-           </li>
-           <li>
-            Datastructures and Algorithms, compter architecture.
-           </li>
-           <li>
-            Web Development - React, Node, Express, MongoDB.
-           </li>
-        </ul>
-    </div>
-
-        <h2>Accomplishments</h2>
-        <table>
+        <div class="">
+            <h3 class="text-3xl mx-2 my-3">Skills</h3>
+            <ul class="text-lg mx-6">
+               <li>
+                JavaScript, Python, Java, C++, SQL, HTML, CSS, and more.
+               </li>
+               <li>
+                Datastructures and Algorithms, compter architecture.
+               </li>
+               <li>
+                Web Development - React, Node, Express, MongoDB.
+               </li>
+            </ul>
+        </div>
+        </div>
+        <div class="mx-4 px-4 my-6">
+        <h2 class="text-3xl mx-2 my-3 text-center">Accomplishments</h2>
+        <table class="table-auto flex  items-center justify-center  border-collapse">
             <tr>
-                <th>ID</th>
-                <th>Level</th>
-                <th>Award</th>
-                <th>Description</th>
-                <th>Year</th>
+                <th class="border p-2">ID</th>
+                <th class="border p-2">Level</th>
+                <th class="border p-2">Award</th>
+                <th class="border p-2">Description</th>
+                <th class="border p-2">Year</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Regional</td>
-                <td>Certeficate</td>
-                <td>Straights A's</td>
-                <td>2019</td>
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>National</td>
-                <td>Certeficate</td>
-                <td>Top 100 Scores</td>
-                <td>2021</td>
+                <td class="border p-2">1</td>
+                <td class="border p-2">Regional</td>
+                <td class="border p-2">Certeficate</td>
+                <td class="border p-2">Straights A's</td>
+                <td class="border p-2">2019</td>
 
             </tr>
             <tr>
-                <td>3</td>
-                <td>Regional</td>
-                <td>Certeficate</td>
-                <td>Regional Science fair</td>
-                <td>2019</td>
+                <td class="border p-2">2</td>
+                <td class="border p-2">National</td>
+                <td class="border p-2">Certeficate</td>
+                <td class="border p-2">Top 100 Scores</td>
+                <td class="border p-2">2021</td>
 
             </tr>
             <tr>
-                <td>4</td>
-                <td>National</td>
-                <td>Certeficate</td>
-                <td>National Science fair</td>
-                <td>2019</td>
-
+                <td class="border p-2">3</td>
+                <td class="border p-2">Regional</td>
+                <td class="border p-2">Certeficate</td>
+                <td class="border p-2">Regional Science fair</td>
+                <td class="border p-2">2019</td>
             </tr>
-
-
+            <tr>
+                <td class="border p-2">4</td>
+                <td class="border p-2">National</td>
+                <td class="border p-2">Certeficate</td>
+                <td class="border p-2">National Science fair</td>
+                <td class="border p-2">2019</td>
+            </tr>
         </table>
-        
-
+    </div>
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
-            </li>
-            <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
 
-            </li>
-           
 
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
 
-            </li>
-            <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
-            </li>
-        </ul>
+    <footer class="bg-gray-500 text-white text-2xl px-0 py-1 mt-8 fixed bottom-0 w-full">
+        <div class="container mx-auto flex justify-center items-center space-x-4">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
+        <script src="app.js"></script>
+
 </body>
 </html>
