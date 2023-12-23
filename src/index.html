@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Home</title>
 </head>
-<body>
+<body class="bg-secondary">
     <header>
-        <nav>
-            <a href="personal.html">Personal</a>
-            <a href="professional.html">Professional</a>
-            <a href="contact.html">Talk to Me!</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand is-info" href="index.html">
+                <img src="images/house-solid.svg" alt="home icon">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="personal.html">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-disabled="true" href="professional.html">Professional</a>
+                  </li>
+                </ul>
+              </div>
+            
+            </div>
+          </nav>
     </header>
     <main>  
-        <img  src="images/anatoli.jpg" alt="my photo" >
+        <div class="text-center">
+            <img  src="images/anatoli.jpg" alt="my photo"  class="img-fluid px-3 my-5 rounded ">
+        </div>
         <div>
-        <p>
-            Embark on a captivating exploration through the multifaceted tapestry of my creative odyssey. As a seasoned Software Engineer, I invite you to delve into the heart of innovation, where every project serves as a testament to my unwavering commitment to pushing artistic boundaries. This portfolio encapsulates not merely a catalogue of skills but a narrative woven with threads of passion, precision, and a relentless pursuit of excellence. From the inception of imaginative concepts to the meticulous execution of intricate details, each endeavor is a chapter in the story of my artistic evolution. Here, you'll find a fusion of technical prowess, design ingenuity, and a profound dedication to storytelling. Join me on this visual journey, where ideas spring to life, and creativity intertwines seamlessly with functionality. 
-            Your presence is a welcomed addition to this immersive experience—a celebration of the extraordinary in a world where artistic expression knows no bounds. 
-            Welcome to a sanctuary of creativity, where dreams manifest into tangible realities.
-        </p>
+        <p class="text-center text-light font-monospace mx-3">
+            Hello and Welcome to my portfolio! I am <em class=" font-italic text-underlined">
+            Anatoli Derese</em> a software Engineering student at AAiT-AAU(Addis Ababa Unviersity).
+        </p> 
+        
     </div>
-   
+        <div class="mb-5 bg-secondary d-flex flex-row justify-content-between fs-3 link-unstyled ">
+            <a href="personal.html" class="mx-3 btn btn-warning">Personal Page</a>
+            <a href="professional.html" class="mx-3 btn btn-warning ">Professional Page</a>
+        </div>
         
-        
-            <div>
-                <a href="personal.html">Go To Personal Page</a>
-                <a href="professional.html">Go To Professional Page</a>
-            </div>
         
 
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="bg-info fixed-bottom">
+        <ul class="d-flex flex-row justify-content-around list-unstyled"> 
+            <li>
+                <a href="https://facebook.com"  target="_blank" ><img src="images/facebook.svg" alt="facebook-logo"></a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><img src="images/instagram.svg" alt="instagram-logo"> </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><img src="images/linkedin.svg" alt="linkedin-logo"></a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><img src="images/github.svg" alt="github-logo"></a>    
             </li>
         </ul>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
