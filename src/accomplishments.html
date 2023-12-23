@@ -3,60 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Accomplishments</title>
 </head>
-<body>
+<body class="bg-secondary text-light font-monospace">
+    
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="professional.html">Professional</a>
-            <a href="contact.html">Talk to Me!</a>
-        </nav>
-    </header>   
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand is-info" href="index.html">
+                <img src="images/house-solid.svg" alt="home icon">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="personal.html">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="professional.html">Professional</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            
+            </div>
+          </nav>
+    </header>
 
     <main>
-        <figure>
+        <div class="d-md-flex m-5 text-center justify-content-between">
+            <figure class="mx-2">
+                <img src="/images/cert1.png" alt="Certeficate1" class="img-fluid" >
+                <figcaption>First Certeficate</figcaption>
+            </figure>
+            <figure class="mx-2">
+                <img src="/images/cert2.jpeg" alt="Certeficate2" class="img-fluid" >
+                <figcaption>Second Certeficate</figcaption>
+            </figure>
+            <figure class="mx-2">
+                <img src="/images/cert3.png" alt="Certeficate3" class="img-fluid">
+                <figcaption>Third Certeficate</figcaption>
+            </figure>
 
-            <img src="/images/cert1.png" alt="Certeficate1" >
-            <figcaption>First Certeficate</figcaption>
-        </figure>
-        <figure>
-            <img src="/images/cert2.jpeg" alt="Certeficate2" >
-            <figcaption>Second Certeficate</figcaption>
-        </figure>
-        <figure>
-            <img src="/images/cert3.png" alt="Certeficate3">
-            <figcaption>Third Certeficate</figcaption>
-        </figure>
-        <div>
-            <h3>Video of my project</h3>
-            <iframe 
-        src="https://www.youtube.com/embed/g5aB0UIsmYc?t=45 ">
-        </iframe>
         </div>
-        
+            <h3 class="text-center">Video of my project</h3>
+            <div class="d-md-row text-center">
+                    <iframe 
+                    class="col-9 min-vh-50"
+                        src="https://www.youtube.com/embed/g5aB0UIsmYc?t=45" >
+                    </iframe>
+            </div>
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="bg-info fixed-bottom">
+        <ul class="d-flex flex-row justify-content-around list-unstyled"> 
+            <li>
+                <a href="https://facebook.com"  target="_blank" ><img src="images/facebook.svg" alt="facebook-logo"></a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-            
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><img src="images/instagram.svg" alt="instagram-logo"> </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><img src="images/linkedin.svg" alt="linkedin-logo"></a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><img src="images/github.svg" alt="github-logo"></a>    
             </li>
         </ul>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
