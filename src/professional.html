@@ -3,59 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7f1915c4bf.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Professional</title>
 </head>
-<body>
+<body class="bg-secondary text-light font-monospace">
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="personal.html">Personal</a>
-            <a href="contact.html">Talk to Me!</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand is-info" href="index.html">
+                <img src="images/house-solid.svg" alt="home icon">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="personal.html">Personal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-disabled="true" href="contact.html">Talk To Me</a>
+                  </li>
+                </ul>
+              </div>
+            
+            </div>
+          </nav>
     </header>
-
+    
     <main>
-
-        <a href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf"></i></a>
+        <a href="https://drive.google.com/file/d/1X9Q1SRmnrRoHQr23hdPF9__GntI4WcWl/view?usp=sharing" target="_blank" class="fs-2 text-warning ms-3"><img  src="images/file-pdf-regular.svg" alt="pdf-icon"> Resume</a>        
         
-        <div><h3>Projects</h3>
-        <ul>
-            
-            <li>
-                Health care Automation System | 2020 | Foka Stem Center
-            </li>
-            <li>
-                Smart Digital E- metter | 2019| Foka Stem Center
-            </li>
-            <li>
-                Math Quiz Game Player | 2021 | AAiT
-            </li>
-            <li>
-                Create 2048 Game | 2021 | Pet Project
-            </li>
-        </ul>
-    </div>
-       
-    <div>
-    <h3>Skills</h3>
-        <ul>
-            
-           <li>
-            JavaScript, Python, Java, C++, SQL, HTML, CSS, and more.
-           </li>
-           <li>
-            Datastructures and Algorithms, compter architecture.
-           </li>
-           <li>
-            Web Development - React, Node, Express, MongoDB.
-           </li>
-        </ul>
+        <div class="d-md-flex">
+
+        
+            <div class=" col mx-2">
+                <h3>Projects</h3>
+              <ul>
+                <li>
+                    Health care Automation System | 2020 | Foka Stem Center
+                </li>
+                <li>
+                    Smart Digital E- metter | 2019| Foka Stem Center
+                </li>
+                <li>
+                    Math Quiz Game Player | 2021 | AAiT
+                </li>
+                <li>
+                    Create 2048 Game | 2021 | Pet Project
+                </li>
+            </ul>
+        </div>
+
+        <div class=" col mx-3">
+        <h3>Skills</h3>
+            <ul>
+
+               <li>
+                JavaScript, Python, Java, C++, SQL, HTML, CSS, and more.
+               </li>
+               <li>
+                Datastructures and Algorithms, compter architecture.
+               </li>
+               <li>
+                Web Development - React, Node, Express, MongoDB.
+               </li>
+            </ul>
+        </div>
     </div>
 
-        <h2>Accomplishments</h2>
-        <table>
-            <tr>
+        <h2 class="text-center">Accomplishments</h2>
+        <table class="table table-secondary table-hover text-center">
+            <trdark class="table-info">
                 <th>ID</th>
                 <th>Level</th>
                 <th>Award</th>
@@ -100,25 +123,23 @@
         
 
     </main>
-    <footer>
-        <ul>
-            <li>        <a href="https://facebook.com"  target="_blank"><i class="fa fa-facebook"></i>  </a>
+    <footer class="bg-info fixed-bottom">
+        <ul class="d-flex flex-row justify-content-around list-unstyled"> 
+            <li>
+                <a href="https://facebook.com"  target="_blank" ><img src="images/facebook.svg" alt="facebook-logo"></a>
             </li>
             <li>
-                <a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i>  </a>
-
-            </li>
-           
-
-            <li>
-                <a href="https://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i>  </a>
-
+                <a href="https://instagram.com"  target="_blank"><img src="images/instagram.svg" alt="instagram-logo"> </a>
             </li>
             <li>
-                <a href="https://github.com"  target="_blank"><i class="fa fa-github"></i>  </a>    
-
+                <a href="https://linkedin.com"  target="_blank"><img src="images/linkedin.svg" alt="linkedin-logo"></a>
+            </li>
+            <li>
+                <a href="https://github.com"  target="_blank"><img src="images/github.svg" alt="github-logo"></a>    
             </li>
         </ul>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
